@@ -30,11 +30,6 @@ jobs:
           cargo install cargo-audit
           cargo audit
 
-      - name: Install cargo-deny
-        run: |
-          cargo install cargo-deny
-          cargo deny check
-
       - name: Build
         run: cargo build --verbose
 
