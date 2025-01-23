@@ -1,0 +1,13 @@
+name: Repository Dispatch
+
+on:
+  repository_dispatch:
+    types: [hello_event]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello
+        run: echo "Hello"
